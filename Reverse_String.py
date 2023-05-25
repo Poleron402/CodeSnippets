@@ -1,4 +1,4 @@
-#this is the test code snipped where I reverse a string that the user has entered
+#this is the test code snippet where I reverse a string that the user has entered
 
 user_str = input("Enter anything<< ")
 def reverse_Operation(user_str):

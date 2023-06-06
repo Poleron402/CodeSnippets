@@ -7,15 +7,16 @@
 #this is the test code snippet where I reverse a string that the user has entered
 def reverse_Operation(user_str):
     user_str_rev = ""
-    if user_str != "":
+    if user_str == "" or user_str == " ":
+        raise ValueError("You have entered an empty string or a string without content.")
+    else:
         for i in user_str[::-1]:
             user_str_rev+=i
         return user_str_rev
-    else:
-        return "You have entered an empty string."
     
 user_str = input("Enter anything<< ")
 print(reverse_Operation(user_str))
+
 
 
 

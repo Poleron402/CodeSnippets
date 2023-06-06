@@ -9,6 +9,10 @@ class ReverseString(unittest.TestCase):
         self.assertEqual(reverse_Operation(testcase), expected)
     def test_empty(self):
         testcase = ""
-        expected = "You have entered an empty string."
+        expected = "You have entered an empty string or a string without content."
+        self.assertEqual(reverse_Operation(testcase), expected)
+    def test_empty1(self):
+        testcase = " "
+        expected = "You have entered an empty string or a string without content."
         self.assertEqual(reverse_Operation(testcase), expected)
 unittest.main()
